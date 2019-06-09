@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F61CED86-AEE3-4327-8754-EFC5E7177892}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GIS</RootNamespace>
+    <AssemblyName>GIS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Anacav.Esb, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Anacav.Esb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.10.50.1600.1\lib\Net20\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.6.1\lib\net451\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TableDependency.SqlClient, Version=8.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SqlTableDependency.8.5.3\lib\net451\TableDependency.SqlClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\CONECTION.cs" />
+    <Compile Include="Class\DESCRIPTION.cs" />
+    <Compile Include="Class\LVPG_LVTABLET.cs" />
+    <Compile Include="Class\LVPL_BUSBAR.cs" />
+    <Compile Include="Class\LVPL_OVHLINE.cs" />
+    <Compile Include="Class\LVPL_SELFOVHLINE.cs" />
+    <Compile Include="Class\LVPL_SERVICECABLE.cs" />
+    <Compile Include="Class\LVPL_UGLINE.cs" />
+    <Compile Include="Class\LVPT_AUTOKEY.cs" />
+    <Compile Include="Class\LVPT_AVENUELUSTR.cs" />
+    <Compile Include="Class\LVPT_AVENUELUSTRPOLE.cs" />
+    <Compile Include="Class\LVPT_CAPACITOR.cs" />
+    <Compile Include="Class\LVPT_CONTACTOR.cs" />
+    <Compile Include="Class\LVPT_EARTH.cs" />
+    <Compile Include="Class\LVPT_FORKBOX.cs" />
+    <Compile Include="Class\LVPT_FUSEKEY.cs" />
+    <Compile Include="Class\LVPT_HEADER.cs" />
+    <Compile Include="Class\LVPT_INSULATOR.cs" />
+    <Compile Include="Class\LVPT_JOINT.cs" />
+    <Compile Include="Class\LVPT_JUMPER.cs" />
+    <Compile Include="Class\LVPT_PARTNERPLAQUE.cs" />
+    <Compile Include="Class\LVPT_POLE.cs" />
+    <Compile Include="Class\LVPT_SELFKEY.cs" />
+    <Compile Include="Class\MVPG_HVSUBSTATION.cs" />
+    <Compile Include="Class\MVPG_LAND.cs" />
+    <Compile Include="Class\MVPG_PADSUBSTATION.cs" />
+    <Compile Include="Class\MVPG_PADSUBSTATIONQUBIC.cs" />
+    <Compile Include="Class\MVPL_BUSBAR_HVSUB.cs" />
+    <Compile Include="Class\MVPL_BUSBAR_PADSUB.cs" />
+    <Compile Include="Class\MVPL_OVHLINE.cs" />
+    <Compile Include="Class\MVPL_SELFOVHLINE.cs" />
+    <Compile Include="Class\MVPL_UGLINE.cs" />
+    <Compile Include="Class\MVPT_AUTOBOOSTER.cs" />
+    <Compile Include="Class\MVPT_AUTORECLOSER.cs" />
+    <Compile Include="Class\MVPT_CABLEHEAD.cs" />
+    <Compile Include="Class\MVPT_CABLEJOINT.cs" />
+    <Compile Include="Class\MVPT_CAPACITY.cs" />
+    <Compile Include="Class\MVPT_COLONY.cs" />
+    <Compile Include="Class\MVPT_DSWITCH.cs" />
+    <Compile Include="Class\MVPT_DSWITCH_PADSUB.cs" />
+    <Compile Include="Class\MVPT_EARTH.cs" />
+    <Compile Include="Class\MVPT_FAULTDETECTOR.cs" />
+    <Compile Include="Class\MVPT_FRONTAGE.cs" />
+    <Compile Include="Class\MVPT_FUSECUTOUT.cs" />
+    <Compile Include="Class\MVPT_HEADER.cs" />
+    <Compile Include="Class\MVPT_HVSUBSTATIONTRANS.cs" />
+    <Compile Include="Class\MVPT_JUMPER.cs" />
+    <Compile Include="Class\MVPT_MOF.cs" />
+    <Compile Include="Class\MVPT_OUTGOING.cs" />
+    <Compile Include="Class\MVPT_PADSUBSTATIONTRANS.cs" />
+    <Compile Include="Class\MVPT_PLANTSCATTER.cs" />
+    <Compile Include="Class\MVPT_POLE.cs" />
+    <Compile Include="Class\MVPT_POLESUBSTATION.cs" />
+    <Compile Include="Class\MVPT_SECTIONALIZER.cs" />
+    <Compile Include="Class\MVPT_TOMB.cs" />
+    <Compile Include="Class\NEWCUSTOMERREQUESTS.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

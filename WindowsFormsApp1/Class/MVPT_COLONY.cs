@@ -1,0 +1,52 @@
+using System;
+public class MVPT_COLONY
+{
+    public int OBJECTID { get; set; }
+    public int? CityNID { get; set; }
+    public int? HyperNID { get; set; }
+    public int? HeaderNID { get; set; }
+    public string Address { get; set; }
+    public int? NetDecor_Composite { get; set; }
+    public int? Location { get; set; }
+    public int? Connection { get; set; }
+    public decimal? Voltage_KV { get; set; }
+    public decimal? Voltage_PU { get; set; }
+    public int? Cross_Genus1 { get; set; }
+    public int? Cross_Genus2 { get; set; }
+    public int? Cross_Size1 { get; set; }
+    public int? Cross_Size2 { get; set; }
+    public int? Cross_Length1 { get; set; }
+    public int? Cross_Length2 { get; set; }
+    public int? Cross_Cnt1 { get; set; }
+    public int? Cross_Cnt2 { get; set; }
+    public int? Insulator_Genus1 { get; set; }
+    public int? Insulator_Genus2 { get; set; }
+    public int? Insulator_Kind1 { get; set; }
+    public int? Insulator_Kind2 { get; set; }
+    public int? Insulator_Base1 { get; set; }
+    public int? Insulator_Base2 { get; set; }
+    public int? Insulator_VLevel1 { get; set; }
+    public int? Insulator_VLevel2 { get; set; }
+    public int? Insulator_Elastic_Power1 { get; set; }
+    public int? Insulator_Elastic_Power2 { get; set; }
+    public int? Insulator_Dish_Cnt1 { get; set; }
+    public int? Insulator_Dish_Cnt2 { get; set; }
+    public int? Elavator { get; set; }
+    public decimal? x { get; set; }
+    public decimal? y { get; set; }
+    public string POLEUID { get; set; }
+    public int? U_ID { get; set; }
+    public string U_Date { get; set; }
+    public string U_Time { get; set; }
+    public string VerID { get; set; }
+    public string Cyme_Equal { get; set; }
+    public decimal? Angel { get; set; }
+    public string GUID { get; set; }
+    public string FeederName { get; set; }
+    public Microsoft.SqlServer.Types.SqlGeometry SHAPE { get; set; }
+    public int? Design { get; set; }
+    public string created_user { get; set; }
+    public DateTime? created_date { get; set; }
+    public string last_edited_user { get; set; }
+    public DateTime? last_edited_date { get; set; }
+}

@@ -1,0 +1,51 @@
+using System;
+public class MVPG_LAND
+{
+    public int OBJECTID { get; set; }
+    public int? CityNID { get; set; }
+    public string LandID { get; set; }
+    public string MaliCode { get; set; }
+    public string Address { get; set; }
+    public string PostCode { get; set; }
+    public decimal? longitude { get; set; }
+    public decimal? latitude { get; set; }
+    public decimal? BareArea { get; set; }
+    public decimal? LandWorth { get; set; }
+    public int? Structure { get; set; }
+    public int? Constructor_Year { get; set; }
+    public int? StructKind { get; set; }
+    public decimal? NoblesArea { get; set; }
+    public int? FloorCnt { get; set; }
+    public int? UnitCnt { get; set; }
+    public int? StructPermit { get; set; }
+    public decimal? StructWorth { get; set; }
+    public string PostID { get; set; }
+    public int? PostStatus { get; set; }
+    public int? OwnerStatus { get; set; }
+    public string OfficeNo { get; set; }
+    public string SecondaryAlley { get; set; }
+    public string PrimaryAlley { get; set; }
+    public string RegisterNo { get; set; }
+    public string RegisterDate { get; set; }
+    public int? PartnerElec { get; set; }
+    public string PartnerElecNo { get; set; }
+    public int? PartnerWatter { get; set; }
+    public string PartnerWatterNo { get; set; }
+    public int? PartnerGaz { get; set; }
+    public string PartnerGazNo { get; set; }
+    public int? PartnerTel { get; set; }
+    public decimal? PartnerTelNO { get; set; }
+    public decimal? x { get; set; }
+    public decimal? y { get; set; }
+    public string U_Date { get; set; }
+    public string U_Time { get; set; }
+    public string U_ID { get; set; }
+    public string VerID { get; set; }
+    public string GUID { get; set; }
+    public Microsoft.SqlServer.Types.SqlGeometry SHAPE { get; set; }
+    public int? Design { get; set; }
+    public string created_user { get; set; }
+    public DateTime? created_date { get; set; }
+    public string last_edited_user { get; set; }
+    public DateTime? last_edited_date { get; set; }
+}
