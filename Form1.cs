@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using TableDependency.SqlClient;
 using TableDependency.SqlClient.Base;
 using TableDependency.SqlClient.Base.Enums;
-using TableDependency.SqlClient.Base.EventArgs;
+using TableDependency.SqlClient.Base.EventArgs;   
 using Microsoft.SqlServer.Types;
 using Newtonsoft.Json;
 using System.IO;
