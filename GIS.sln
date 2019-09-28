@@ -1,20 +1,32 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.645
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIS", "WindowsFormsApp1\GIS.csproj", "{F61CED86-AEE3-4327-8754-EFC5E7177892}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{52B5EC7D-188E-47CE-8D8C-544A13B493BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F61CED86-AEE3-4327-8754-EFC5E7177892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F61CED86-AEE3-4327-8754-EFC5E7177892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61CED86-AEE3-4327-8754-EFC5E7177892}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{F61CED86-AEE3-4327-8754-EFC5E7177892}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{F61CED86-AEE3-4327-8754-EFC5E7177892}.Debug|x64.ActiveCfg = Debug|x64
+		{F61CED86-AEE3-4327-8754-EFC5E7177892}.Debug|x64.Build.0 = Debug|x64
 		{F61CED86-AEE3-4327-8754-EFC5E7177892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F61CED86-AEE3-4327-8754-EFC5E7177892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61CED86-AEE3-4327-8754-EFC5E7177892}.Release|x64.ActiveCfg = Release|x64
+		{F61CED86-AEE3-4327-8754-EFC5E7177892}.Release|x64.Build.0 = Release|x64
+		{52B5EC7D-188E-47CE-8D8C-544A13B493BD}.Debug|Any CPU.ActiveCfg = Release
+		{52B5EC7D-188E-47CE-8D8C-544A13B493BD}.Debug|x64.ActiveCfg = Debug
+		{52B5EC7D-188E-47CE-8D8C-544A13B493BD}.Release|Any CPU.ActiveCfg = Release
+		{52B5EC7D-188E-47CE-8D8C-544A13B493BD}.Release|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
